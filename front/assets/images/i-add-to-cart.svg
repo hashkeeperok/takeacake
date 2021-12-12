@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<g fill="white">
+<path d="M 15 48 A 8 8 0 1 1 15 64 A 8 8 0 1 1 15 48 V 52 A 4 4 0 1 0 15 60 A 4 4 0 1 0 15 52 Z" />
+<path d="M 54 48 A 8 8 0 1 1 54 64 A 8 8 0 0 1 54 48 V 52 A 4 4 0 1 0 54 60 A 4 4 0 1 0 54 52 Z" />
+<path d="M 0 4 H 13 L 15 12 H 64 L 56 40 H 20 L 18 48 H 54 V 52 H 13 L 17 36 L 10 8 H 0 Z M 21 36 H 53 L 59 16 H 16 Z" />
+<path d="M 35 0 H 39 V 24 L 44 19 L 47 22 L 37 32 L 27 22 L 30 19 L 35 24 Z" />
+</g>
+</svg>
