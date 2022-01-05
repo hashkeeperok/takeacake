@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: #9fb4c7;
   min-height: 100%;
   font: 300 20px/1.4em "Open Sans Condensed", sans-serif;
   color: black;
@@ -18,7 +19,7 @@ body.theme--spring {
 a {
   line-height: 1.2;
   text-decoration: none;
-  color: #5bb3d2;
+  color: white;
   border-bottom: 1px solid;
 }
 .nobr {
@@ -49,7 +50,7 @@ a {
   overflow: hidden;
 }
 .share--color--blue .share__icon {
-  fill: #5bb3d2;
+  fill: white;
 }
 .logo {
   display: block;
@@ -82,7 +83,7 @@ a {
   white-space: nowrap;
   text-decoration: none;
   color: black;
-  border-bottom-color: #5bb3d2;
+  border-bottom-color: white;
 }
 @media screen and (max-width: 991px) {
   .header__menu {
@@ -105,7 +106,7 @@ a {
 }
 .header__contacts .phone {
   font-weight: 700;
-  color: #5bb3d2;
+  color: white;
 }
 .header__contacts .phone .phone__number {
   font-size: 32px;
@@ -122,12 +123,11 @@ a {
 .header__contacts .phone .whatsapp {
   display: inline-block;
   padding: 0 0.5em;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
   line-height: 1.5;
   color: white;
-  background: rgba(91, 179, 210, 0.75);
   border: 0;
   border-radius: 999px;
 }
@@ -150,7 +150,7 @@ a {
 }
 .local-band-logo {
   display: block;
-  width: 160px;
+  width: 180px;
   margin: 0 auto 35px;
   border: none;
   overflow: hidden;
@@ -166,7 +166,7 @@ h1 {
   line-height: 1.25em;
   text-transform: uppercase;
   text-align: center;
-  color: #5bb3d2;
+  color: white;
 }
 h1 span {
   display: inline-block;
@@ -198,13 +198,13 @@ h1 span {
   text-decoration: none;
   color: white;
   background: #f6adb2;
-  border-radius: 0;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
   -webkit-appearance: none;
 }
 .btn--blue {
-  background: #5bb3d2;
+  background: white;
 }
 .intro {
   padding: 35px;
@@ -284,7 +284,7 @@ h1 span {
   color: white;
 }
 .product .product__new {
-  background: #5bb3d2;
+  background: white;
 }
 .product .product__hit {
   background: #ee707a;
@@ -388,13 +388,13 @@ h1 span {
   line-height: 1.1em;
   text-align: center;
   color: white;
-  background: #5bb3d2;
+  background: white;
   border-radius: 50%;
   overflow: hidden;
 }
 .product .spin-container .minus,
 .product .spin-container .plus {
-  background: #5bb3d2;
+  background: white;
 }
 .product.selected:after {
   content: "";
@@ -449,21 +449,20 @@ h1 span {
   background-size: auto 100%;
 }
 .condition__icon--time {
-  background-image: url("../images/i-timing.svg");
+  background-image: url("../images/i-timing.png");
 }
 .condition__icon--payment {
-  background-image: url("../images/i-payment.svg");
-  background-size: auto 80%;
+  background-image: url("../images/i-payment.png");
 }
 .condition__icon--delivery {
-  background-image: url("../images/i-delivery.svg");
+  background-image: url("../images/i-delivery.png");
 }
 .condition__title {
   font-weight: 700;
   font-size: 1.75rem;
   line-height: 1.25em;
   text-transform: lowercase;
-  color: #5bb3d2;
+  color: white;
 }
 .condition__title small {
   display: block;
@@ -497,7 +496,7 @@ h1 span {
 }
 .place__name {
   font-weight: 700;
-  color: #5bb3d2;
+  color: white;
 }
 input[type="text"] {
   box-sizing: border-box;
@@ -507,7 +506,7 @@ input[type="text"] {
   font-size: inherit;
   line-height: 1.25em;
   background: white;
-  border-radius: 0;
+  border-radius: 10px;
   border: 0;
   vertical-align: top;
   outline: 0;
@@ -539,7 +538,8 @@ select {
 input[type="submit"] {
   font-size: inherit;
   line-height: 1.5em;
-  background: #f6adb2;
+  font-weight: bold;
+  background: #afc5d9;
   outline: 0;
 }
 input[type="submit"][disabled] {
@@ -558,7 +558,8 @@ input[type="submit"][disabled] {
   padding: 35px 100px 50px;
   font-size: 1.2rem;
   line-height: 1.25;
-  background: #95d9ee url("../images/stripes-blue.png") repeat;
+  background: #8da2b5;
+  border-radius: 50px;
 }
 .form h1 {
   color: white;
@@ -597,7 +598,7 @@ input[type="submit"][disabled] {
   margin-top: 35px;
   margin-bottom: 35px;
   height: 1px;
-  background: #5bb3d2;
+  background: white;
 }
 .order-form [name="name"] {
   width: 100%;
@@ -701,13 +702,16 @@ input[type="submit"][disabled] {
 .designer-top {
   position: relative;
   box-sizing: border-box;
-  min-height: 620px;
-  padding: 520px 35px 35px;
+  padding: 0px 35px 35px;
   text-align: center;
   color: white;
-  background: url("../../../data/images/own-cake.jpg") no-repeat center;
   background-size: cover;
 }
+
+.designer-top__ctrls {
+  border-radius: 13px;
+}
+
 .designer-top__caption {
   margin-bottom: 10px;
   font-weight: 700;
@@ -757,6 +761,7 @@ input[type="submit"][disabled] {
 .designer-form [name="date"] {
   width: 100%;
   max-width: 150px;
+  border-radius: 10px;
 }
 .designer-form [name="time"] {
   width: 100%;
@@ -1326,4 +1331,59 @@ input[type="submit"][disabled] {
   .col-xs-12 {
     width: 100%;
   }
+}
+
+
+:root {
+  --animate: 1;
+}
+.square {
+  width: 200px;
+  height: 40px;
+  background: white;
+  border-radius: 15px;
+  border: #9d9d9d 4px solid;
+  animation: wipe-enter-1 calc(var(--animate) * 1s)
+}
+.square a {
+  color: black;
+  border: none;
+  line-height: 40px;
+  font-weight: bold;
+}
+@keyframes wipe-enter-1 {
+  0% {
+    transform: scale(0, .025)
+  }
+  50% {
+    transform: scale(1, .025)
+  }
+}
+
+
+.wrap {
+  display: flex
+}
+.stage {
+  position: relative;
+  height: 100px;
+}
+.stage, .stage-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stage-footer {
+  padding: 16px
+}
+button {
+  padding: 12px;
+  border-radius: 6px;
+  background: #028e4a;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  transition: background calc(var(--animate)*0.2s) ease;
+  min-width: 200px;
+  cursor: pointer;
 }

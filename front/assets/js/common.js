@@ -413,5 +413,22 @@ $(function () {
     .on('resize', function () {
       lazyLoadCovers();
     });
-
+  
+  $('#type_bento').on('click', function() {
+    $('#person_count').hide();
+    $('#filling_bento').show();
+    $('#filling_tort').hide();
+    $('#inner').hide();
+    $($('#filling_bento [name="filling"]')[0]).click();
+  });
+  
+  $('#type_tort').on('click', function() {
+    $('#person_count').show();
+    $('#filling_bento').hide();
+    $('#filling_tort').show();
+    $('#inner').show();
+    $($('#filling_tort [name="filling"]')[0]).click();
+  });
+  
+  dateId.min = new Date().toISOString().split("T")[0];
 });

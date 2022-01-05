@@ -48,16 +48,6 @@
                   ../front/assets/images/logo.png 4x">
             </a>
             <div class="header__contacts">
-                <div class="share share--color--blue">
-                    <div class="share__items">
-                        <a class="share__item share__instagram" href="https://www.instagram.com/take_a_cake_omsk/"
-                           rel="nofollow" target="_blank" title="Instagram">
-                            <svg class="share__icon">
-                                <use xlink:href="#instagram"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
                 <div class="phone">
                     <div class="phone__number">
                         <a class="link phone-link" href="tel:+79263713629" rel="nofollow">+7 913 664-19-02</a>
@@ -80,8 +70,12 @@
 
                     <div class="designer-top__caption">На нашем сайте вы можете собрать свой авторский торт!</div>
 
-                    <div class="designer-top__ctrls">
-                        <a class="btn" href="#section-designer">Собрать торт</a>
+                    <div class="stage">
+                        <div class="wrap">
+                            <div class="square">
+                                <a href="#section-designer">С О Б Р А Т Ь</a>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -140,36 +134,25 @@
                             <div class="form__item designer__part">
                                 <div class="designer__inputs">
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="type" value="Бенто" checked>
+                                        <input class="radio__input" type="radio" id="type_bento" name="type" value="Бенто">
                                         <span class="radio__text">Бенто</span>
                                     </label>
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="type" value="Большой торт">
-                                        <span class="radio__text">Большой торт</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-6 col-xs-12">
-                            <div class="form__item designer__part">
-                                <div class="designer__caption">Форма</div>
-                                <div class="designer__inputs">
-                                    <label class="radio">
-                                        <input class="radio__input" type="radio" name="shape" value="Круг" checked>
-                                        <span class="radio__text">Круг</span>
+                                        <input class="radio__input" type="radio" id="type_tort" name="type" value="Большой торт" checked>
+                                        <span class="radio__text">Торт (от 2 кг)</span>
                                     </label>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row" id="person_count">
                         <div class="col col-5 col-md-12 col-xs-12">
                             <div class="form__item designer__part">
                                 <div class="designer__caption">Количество человек</div>
                                 <div class="designer__inputs">
                                     <div class="input">
-                                        <input class="input__ctrl" type="text" name="person_count" value="">
+                                        <input class="input__ctrl" type="text" name="person_count" value="2" required>
                                     </div>
                                 </div>
                             </div>
@@ -196,41 +179,59 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-6 col-xs-12">
+                        <div class="col col-6 col-xs-12" id="inner">
                             <div class="form__item designer__part">
                                 <div class="designer__caption">Крем для начинки</div>
                                 <div class="designer__inputs">
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="inner" value="Шоколадный кремчиз" checked>
-                                        <span class="radio__text">Шоколадный кремчиз</span>
+                                        <input class="radio__input" type="radio" name="inner" value="Шоколадный крем-чиз" checked>
+                                        <span class="radio__text">Шоколадный крем-чиз</span>
                                     </label>
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="inner" value="Кремчиз">
-                                        <span class="radio__text">Кремчиз</span>
+                                        <input class="radio__input" type="radio" name="inner" value="Крем-чиз">
+                                        <span class="radio__text">Крем-чиз</span>
                                     </label>
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="inner" value="Крем из белого шоколада">
-                                        <span class="radio__text">Крем из белого шоколада</span>
+                                        <input class="radio__input" type="radio" name="inner" value="Крем на основе белого шоколада">
+                                        <span class="radio__text">Крем на основе белого шоколада</span>
                                     </label>
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="inner" value="Крем из молочного шоколада">
-                                        <span class="radio__text">Крем из молочного шоколада</span>
+                                        <input class="radio__input" type="radio" name="inner" value="Крем на основе молочного шоколада">
+                                        <span class="radio__text">Крем на основе молочного шоколада</span>
                                     </label>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="form__item designer__part">
+                    <div class="form__item designer__part" style="display: none" id="filling_bento">
                         <div class="designer__caption">Начинки</div>
                         <div class="designer__inputs">
                             <label class="radio">
-                                <input class="radio__input" type="radio" name="filling" value="Чизкейк" checked>
-                                <span class="radio__text">Чизкейк</span>
+                                <input class="radio__input" type="radio" name="filling" value="Банан" checked>
+                                <span class="radio__text">Банан</span>
                             </label>
                             <label class="radio">
-                                <input class="radio__input" type="radio" name="filling" value="Белый шоколад—вишня">
-                                <span class="radio__text">Белый шоколад—вишня</span>
+                                <input class="radio__input" type="radio" name="filling" value="Белый шоколад">
+                                <span class="radio__text">Белый шоколад</span>
+                            </label>
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="filling" value="Молочный шоколад">
+                                <span class="radio__text">Молочный шоколад</span>
+                            </label>
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="filling" value="Ягодная">
+                                <span class="radio__text">Ягодная</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form__item designer__part" id="filling_tort">
+                        <div class="designer__caption">Начинки</div>
+                        <div class="designer__inputs">
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="filling" value="Белый шоколад—вишня" checked>
+                                <span class="radio__text">Чизкейк белый шоколад — вишня</span>
                             </label>
                             <label class="radio">
                                 <input class="radio__input" type="radio" name="filling" value="Ферреро">
@@ -252,10 +253,6 @@
                                 <input class="radio__input" type="radio" name="filling" value="Клубника">
                                 <span class="radio__text">Клубника</span>
                             </label>
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="filling" value="Ежевика">
-                                <span class="radio__text">Ежевика</span>
-                            </label>
                         </div>
                     </div>
 
@@ -267,7 +264,7 @@
                         <div class="form__label"><label>Ваше имя:</label></div>
                         <div class="form__fields">
                             <div class="input">
-                                <input class="input__ctrl" type="text" name="name">
+                                <input class="input__ctrl" type="text" name="name" required>
                             </div>
                         </div>
                     </div>
@@ -276,7 +273,7 @@
                         <div class="form__fields">
                             <div class="input">
                                 <input class="input__ctrl" type="text" name="phone" value=""
-                                       placeholder="+7 (___) ___-__-__">
+                                       placeholder="+7 (___) ___-__-__" required>
                             </div>
                         </div>
                     </div>
@@ -284,7 +281,15 @@
                         <div class="form__label"><label>Дата получения:</label></div>
                         <div class="form__fields">
                             <div class="input">
-                                <input class="input__ctrl" type="text" name="date" placeholder="__.__.____">
+                                <input class="input__ctrl" id="dateId" type="date" name="date" placeholder="__.__.____" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__label"><label>Время получения:</label></div>
+                        <div class="form__fields">
+                            <div class="input">
+                                <input class="input__ctrl" type="time" name="time" placeholder="__.__.____">
                             </div>
                         </div>
                     </div>
@@ -301,8 +306,11 @@
     <div id="footer" class="footer">
         <div class="container">
 
-            <a class="local-band-logo" href="/" target="_blank">
-                <img src="../front/assets/images/logo.png" width="160" height="160" alt="Take a cake">
+            <a class="local-band-logo" href="/">
+                <img src="../front/assets/images/logo.png" width="180px" alt="Take a cake"
+                     srcset="../front/assets/images/logo.png 2x,
+                   ../front/assets/images/logo.png 3x,
+                  ../front/assets/images/logo.png 4x">
             </a>
 
             <div class="share">
@@ -316,7 +324,7 @@
                 </div>
             </div>
 
-            <div class="copyright">&copy; 2021 Take a cake</div>
+            <div class="copyright">&copy; 2021-<?= date("Y"); ?> Take a cake</div>
 
         </div>
     </div>
