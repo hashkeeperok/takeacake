@@ -10,7 +10,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="../front/assets/css/reset.css%3Fv1.css">
-    <link rel="stylesheet" href="../front/assets/css/common.css%3Fv38.css">
+    <link rel="stylesheet" href="../front/assets/css/common.css%3Fv38.css?v=2">
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
