@@ -15,8 +15,9 @@ $data = [
     'Имя' => $_POST['name'] ?? '',
     'Телефон' => $_POST['phone'] ?? '',
     'Дата' => $_POST['date'] ?? '',
+    'Время' => $_POST['time'] ?? '',
 ];
-$message = "<b>Новый заказ торта!</b> \n";
+$message = "<b>Новый заказ!</b> \n";
 
 foreach ($data as $key => $value) {
     $message .= "\n<b>$key</b>: $value";
