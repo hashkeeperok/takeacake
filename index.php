@@ -33,6 +33,7 @@
         <div><img src="https://mc.yandex.ru/watch/86852578" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+    <script src="https://kit.fontawesome.com/2a04fe7fea.js" crossorigin="anonymous"></script>
 </head>
 <body class="theme--winter">
 
@@ -72,12 +73,16 @@
 
                     <div class="stage">
                         <div class="wrap">
+                            <div class="arrow-wrap">
+                                <i class="fa fa-arrow-down"></i>
+                            </div>
                             <div class="square">
-                                <a href="#section-designer">С О Б Р А Т Ь</a>
+                                <a href="#section-designer">
+                                    С О Б Р А Т Ь
+                                </a>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>
@@ -134,11 +139,13 @@
                             <div class="form__item designer__part">
                                 <div class="designer__inputs">
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" id="type_bento" name="type" value="Бенто">
+                                        <input class="radio__input" type="radio" id="type_bento" name="type"
+                                               value="Бенто">
                                         <span class="radio__text">Бенто</span>
                                     </label>
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" id="type_tort" name="type" value="Большой торт" checked>
+                                        <input class="radio__input" type="radio" id="type_tort" name="type"
+                                               value="Большой торт" checked>
                                         <span class="radio__text">Торт (от 2 кг)</span>
                                     </label>
                                 </div>
@@ -165,7 +172,8 @@
                                 <div class="designer__caption">Основы</div>
                                 <div class="designer__inputs">
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="base" value="Шоколадный бисквит" checked>
+                                        <input class="radio__input" type="radio" name="base" value="Шоколадный бисквит"
+                                               checked>
                                         <span class="radio__text">Шоколадный бисквит</span>
                                     </label>
                                     <label class="radio">
@@ -184,7 +192,8 @@
                                 <div class="designer__caption">Крем для начинки</div>
                                 <div class="designer__inputs">
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="inner" value="Шоколадный крем-чиз" checked>
+                                        <input class="radio__input" type="radio" name="inner"
+                                               value="Шоколадный крем-чиз" checked>
                                         <span class="radio__text">Шоколадный крем-чиз</span>
                                     </label>
                                     <label class="radio">
@@ -192,11 +201,13 @@
                                         <span class="radio__text">Крем-чиз</span>
                                     </label>
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="inner" value="Крем на основе белого шоколада">
+                                        <input class="radio__input" type="radio" name="inner"
+                                               value="Крем на основе белого шоколада">
                                         <span class="radio__text">Крем на основе белого шоколада</span>
                                     </label>
                                     <label class="radio">
-                                        <input class="radio__input" type="radio" name="inner" value="Крем на основе молочного шоколада">
+                                        <input class="radio__input" type="radio" name="inner"
+                                               value="Крем на основе молочного шоколада">
                                         <span class="radio__text">Крем на основе молочного шоколада</span>
                                     </label>
                                 </div>
@@ -230,7 +241,8 @@
                         <div class="designer__caption">Начинки</div>
                         <div class="designer__inputs">
                             <label class="radio">
-                                <input class="radio__input" type="radio" name="filling" value="Белый шоколад—вишня" checked>
+                                <input class="radio__input" type="radio" name="filling" value="Белый шоколад—вишня"
+                                       checked>
                                 <span class="radio__text">Чизкейк белый шоколад — вишня</span>
                             </label>
                             <label class="radio">
@@ -258,7 +270,9 @@
 
                     <div class="form__item form__separator"></div>
 
-                    <div class="form__note">Пожалуйста, заполните форму и наш менеджер свяжется с вами для согласования деталей и стоимости</div>
+                    <div class="form__note">Пожалуйста, заполните форму и наш менеджер свяжется с вами для согласования
+                                            деталей и стоимости
+                    </div>
 
                     <div class="form__item">
                         <div class="form__label"><label>Ваше имя:</label></div>
@@ -281,7 +295,8 @@
                         <div class="form__label"><label>Дата получения:</label></div>
                         <div class="form__fields">
                             <div class="input">
-                                <input class="input__ctrl" id="dateId" type="date" name="date" placeholder="__.__.____" required>
+                                <input class="input__ctrl" id="dateId" type="date" name="date" placeholder="__.__.____"
+                                       required>
                             </div>
                         </div>
                     </div>

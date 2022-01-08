@@ -1,4 +1,4 @@
-name: takeacake
+name: takeacakestore
 recipe: lamp
 config:
   php: '7.4'
