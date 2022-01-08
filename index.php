@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:title" content="Конструктор тортов, создать свой торт">
+    <meta property="og:site_name" content="takeacake.store">
+    <meta property="og:url" content="https://takeacake.store">
+    <meta property="og:description" content="У нас на сайте вы можете собрать торт в специальном конструкторе.">
+    <meta property="og:image" content="/front/assets/images/logo.png">
     <title>Конструктор тортов, создать свой торт - takeacake.store: купить торт в Омске, интернет-магазин тортов и
            сладостей</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
